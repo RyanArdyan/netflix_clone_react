@@ -1,0 +1,19 @@
+.navbar {
+    /* lebar penuh */
+    width: 100%;
+    /* padding adalah jarak antara konten dengan border */
+    /* 20px: Padding atas dan bawah elemen (top dan bottom) adalah 20 piksel. */
+    /* 6%: Padding kiri dan kanan elemen (left dan right) adalah 6% dari lebar elemen induk (parent container). */
+    padding: 20px 6%;
+    /* Flexbox itu seperti kotak ajaib yang bisa menata barang-barang di dalamnya supaya rapi. Kalau kita pakai display: flex;, barang-barang di dalam kotak bisa diatur dengan mudah: mau berjajar ke samping, ke bawah, atau dipusatkan. Jadi, kalau ada tiga mainan di dalam kotak, Flexbox bisa bikin mereka berjejer rapi tanpa kita susun satu per satu */
+    display: flex;
+    /* Sebar elemen dengan jarak di antaranya */
+    justify-content: space-between;
+    /* ukuran font */
+    font-size: 14px;
+    /* warna */
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
+    /* Bayangkan halaman web itu seperti tumpukan kartu. z-index mengatur di lapisan mana kartu itu diletakkan. Semakin besar nilai z-index, semakin "atas" posisi elemen tersebut. */
+    z-index: 1;
+}

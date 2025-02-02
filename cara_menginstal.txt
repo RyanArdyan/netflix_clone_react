@@ -1,0 +1,6 @@
+1. npm create vite@latest
+    project name: .
+    framework: react
+    varian: javascript
+    npm install
+    npm run dev

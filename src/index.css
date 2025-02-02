@@ -1,0 +1,15 @@
+/* untuk semua element */
+* {
+  margin: 0;
+  padding: 0;
+  /*  Dengan box-sizing: border-box;, lebar dan tinggi elemen mencakup konten, padding, dan border. Ini berarti jika Anda menetapkan lebar elemen menjadi 200px, maka total lebar elemen di halaman akan tetap 200px, terlepas dari berapa banyak padding dan border yang Anda tambahkan. Jadi, jika Anda memiliki padding 10px dan border 5px, konten yang dapat ditampilkan akan lebih kecil, tetapi total lebar elemen tetap 200px.*/
+  /* ukuran-kotak: bingkai-kotak */
+  box-sizing: border-box;
+}
+
+body {
+  /* latar belakang */
+  background: black;
+  /* warna font */
+  color: white;
+}
