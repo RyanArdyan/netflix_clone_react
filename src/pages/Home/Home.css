@@ -1,0 +1,14 @@
+.hero {
+    /* position: relative; memungkinkan Anda untuk menggeser elemen dari posisi normalnya tanpa mempengaruhi tata letak elemen lain di sekitarnya.
+    Ini juga menciptakan konteks untuk elemen anak yang memiliki position: absolute;, sehingga Anda dapat mengatur posisi elemen anak dengan lebih mudah dan terkontrol. */
+    position: relative;
+}
+
+.banner-img {
+    /* lebar penuh */
+    width: 100%;
+    /* mask-image: linear-gradient(to right, transparent, black 75%); digunakan untuk menerapkan gambar masker berbentuk gradien pada elemen.
+    Gradien ini mengontrol visibilitas elemen, menciptakan efek transisi dari transparansi ke opasitas, di mana bagian kiri elemen akan transparan dan bagian kanan akan terlihat sepenuhnya.
+    Ini berguna untuk menciptakan efek visual yang menarik dan dinamis dalam desain web. */
+    mask-image: linear-gradient(to right, transparent, black 75%);
+}

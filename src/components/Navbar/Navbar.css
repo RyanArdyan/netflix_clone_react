@@ -69,4 +69,43 @@
     /* jarak antar element secara horizontal */
     gap: 10px;
     cursor: pointer;
+    /* element induk */
+    /* `position: relative;` dalam CSS digunakan untuk mengatur posisi elemen berdasarkan posisinya yang normal dalam aliran dokumen, memungkinkan elemen tersebut untuk digeser dari lokasi aslinya menggunakan properti `top`, `right`, `bottom`, dan `left`. Elemen yang diposisikan secara relatif tetap mempengaruhi tata letak elemen lain di sekitarnya, sehingga ruang yang ditempatinya tetap ada. Selain itu, elemen dengan `position: relative;` dapat menjadi referensi bagi elemen anak yang diposisikan secara absolut, sehingga memudahkan dalam menciptakan tata letak yang lebih kompleks. */
+    position: relative;
+}
+
+.navbar .dropdown {
+    /* anak dari induk .navbar-profile yg position nya relative */
+    /* position: absolute; dalam CSS digunakan untuk menempatkan elemen di lokasi tertentu dalam halaman web, relatif terhadap elemen induk terdekat yang memiliki posisi selain static. Elemen yang diposisikan secara absolut tidak mempengaruhi posisi elemen lain di sekitarnya, sehingga memungkinkan tata letak yang lebih fleksibel. Anda dapat mengatur jarak elemen dari tepi atas, bawah, kiri, atau kanan menggunakan properti seperti top, left, right, dan bottom, sehingga memudahkan dalam menciptakan desain yang diinginkan. */
+    position: absolute;
+    /* Memposisikan dropdown tepat di bawah elemen navbar */
+    top: 100%;
+    /* Menempatkan dropdown di sisi kanan elemen navbar */
+    right: 0;
+    /* Mengatur lebar dropdown sesuai dengan konten terlebar di dalamnya */
+    width: max-content;
+    /* warna latar belakang */
+    background: #191919;
+    /* nilai pertama adalah atas bawah, nilai kedua adalah kiri dan kanan */
+    padding: 18px 22px;
+    /* sudut lengkung di keempat sisi */
+    border-radius: 2px;
+    /* dekorasi text: garis bawah */
+    text-decoration: underline;
+    /* semakin tinggi nilai nya maka semakin depan */
+    z-index: 1;
+    /* secara bawaan tampilannya itu tidak ada */
+    display: none;
+}
+
+.navbar .dropdown p {
+    /* ukuran font */
+    font-size: 13px;
+    /* kursor jadi tangan telunjuk */
+    cursor: pointer;
+}
+
+.navbar-profile:hover .dropdown {
+    /* menampilkan dropdown dan memulai baris baru dan dapat memiliki lebar dan tinggi yang ditentukan, serta mengisi lebar penuh dari kontainer induknya. */
+    display: block;
 }
