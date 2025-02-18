@@ -11,4 +11,75 @@
     Gradien ini mengontrol visibilitas elemen, menciptakan efek transisi dari transparansi ke opasitas, di mana bagian kiri elemen akan transparan dan bagian kanan akan terlihat sepenuhnya.
     Ini berguna untuk menciptakan efek visual yang menarik dan dinamis dalam desain web. */
     mask-image: linear-gradient(to right, transparent, black 75%);
+    /* -webkit-mask-image: linear-gradient(to right, transparent, black 75%); */
+}
+
+.hero-caption {
+    /* absolute anak dari .hero yg position nya relative */
+    /* position: absolute; memungkinkan Anda untuk mengatur posisi elemen secara bebas dalam konteks elemen induknya, tanpa mempengaruhi elemen lain di sekitarnya. Ini sangat berguna untuk membuat tata letak yang kompleks dan menempatkan elemen di lokasi yang spesifik dalam desain Anda. */
+    position: absolute;
+    /* lebar 100% */
+    width: 100%;
+    /* padding kiri */
+    padding-left: 6%;
+    /* Anda memastikan bahwa elemen dengan kelas .hero-caption akan diposisikan tepat di bagian bawah elemen induknya, */
+    bottom: 0;
+}
+
+.caption-img {
+    /* lebar */
+    width: 90%;
+    /* lebar maksimal */
+    max-width: 420px;
+    /* margin bawah */
+    margin-bottom: 30px;
+}
+
+.hero-caption p {
+    /* lebar maksimal */
+    max-width: 700px;
+    /* ukuran font */
+    font-size: 17px;
+    /* margin bawah */
+    margin-bottom: 20px;
+}
+
+.hero-btns {
+    /* display flex secara otomatis membuat ukuran element sejajar secara horizontal dan vertikal */
+    display: flex;
+    /* digunakan untuk mengatur jarak antara elemen-elemen anak dalam kontainer flexbox. */
+    gap: 10px;
+    /* margin-bawah */
+    margin-bottom: 50px;
+}
+
+.hero-btns .btn img {
+    /* lebar  */
+    width: 45px;
+}
+
+.hero-btns .btn {
+    /* menghapus border atau garis tepi */
+    border: 0;
+    /* menghapus outline dari elemen. Outline adalah garis yang biasanya muncul di sekitar elemen ketika elemen tersebut mendapatkan fokus (misalnya, ketika pengguna mengklik tombol atau menavigasi menggunakan keyboard). */
+    outline: 0;
+    /* 8px atas dan bawah, 20px untuk kiri dan kanan */
+    padding: 8px 20px;
+    /* agar tulisan play dan more info berada diatas */
+    /* menjadikan elemen sebagai flex container yang ditampilkan dalam aliran dokumen seperti elemen inline. Ini memungkinkan pengaturan tata letak yang fleksibel dan responsif untuk elemen anak di dalamnya, sambil tetap mempertahankan posisi inline dalam aliran dokumen */
+    display: inline-flex;
+    /* agar ke tengah secara vertikal */
+    align-items: center;
+    /* digunakan untuk mengatur jarak antara elemen-elemen anak dalam kontainer yang menggunakan model layout flexbox atau grid.  */
+    gap: 10px;
+    /* ukuran font */
+    font-size: 15px;
+    /* ketebalan font */
+    font-weight: 600;
+    /* warna latar belakang */
+    background: white;
+    /* lengkungan sudut */
+    border-radius: 4px;
+    /* agar kursor jadi tangan */
+    cursor: pointer;
 }
